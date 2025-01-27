@@ -12,10 +12,14 @@ namespace StreetFight.Obstacle
         private Transform _parentTransform; // Родительский трансформ для маркера
 
         // Конструктор для установки слоя земли и загрузки префаба маркера
-        public GroundService(LayerMask groundLayer)
+        public GroundService(LayerMask groundLayer, GameObject markerPrefab)
         {
             _groundLayer = groundLayer;
-            _markerPrefab = Resources.Load<GameObject>("GoalObstacle/ShowPointObstacle");
+            
+            if(markerPrefab != null)
+                _markerPrefab = markerPrefab;
+            else
+                _markerPrefab = Resources.Load<GameObject>("GoalObstacle/ShowPointObstacle");
         }
 
         // Метод для проверки столкновения с землёй

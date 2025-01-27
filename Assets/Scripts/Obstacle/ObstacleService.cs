@@ -35,6 +35,7 @@ namespace StreetFight.Obstacle
                 {
                     var rb = _currentObstacle.AddComponent<Rigidbody>();
                     rb.useGravity = true; // Управляем вручную
+                    rb.constraints = RigidbodyConstraints.FreezeRotation; // Замораживаем вращение
                 }
             }
         }

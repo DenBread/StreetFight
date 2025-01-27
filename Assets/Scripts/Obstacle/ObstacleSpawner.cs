@@ -5,8 +5,7 @@ namespace StreetFight.Obstacle
 {
     public class ObstacleSpawner : MonoBehaviour
     {
-        private GameObject obstaclePrefab; // Префаб препятствия
-
+        [SerializeField] private GameObject obstaclePrefab; // Префаб препятствия
         [SerializeField] private Vector3 spawnAreaMin; // Нижний левый угол области спавна
         [SerializeField] private Vector3 spawnAreaMax; // Верхний правый угол области спавна
         [SerializeField] private float _spawnInterval = 1f; // Интервал между активацией объектов
@@ -17,7 +16,8 @@ namespace StreetFight.Obstacle
         [Inject]
         private void Construct(IObstacleSpawnService spawnService, IPlayerService playerService)
         {
-            obstaclePrefab = Resources.Load<GameObject>("Prefabs/Obstacle/Obstacle"); // Загрузка префаба препятствия
+            if(obstaclePrefab == null)
+                obstaclePrefab = Resources.Load<GameObject>("Prefabs/Obstacle/Obstacle"); // Загрузка префаба препятствия
             _spawnService = spawnService;
             _spawnService.InitializeSpawner(obstaclePrefab, spawnAreaMin, spawnAreaMax, transform, this,
                 _spawnInterval); // Инициализация спаунера
