@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3742930e08c413b45b2b17002d4cb807
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297573
+  packageName: universalGameObject pool
+  packageVersion: 1.0
+  assetPath: Assets/GameObjectPool/Scripts/GameObjectPool/GameObjectPoolInstance.cs
+  uploadId: 699146

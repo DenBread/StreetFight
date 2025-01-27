@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 624c878549bd4bf4dae1137f4477e4a8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297573
+  packageName: universalGameObject pool
+  packageVersion: 1.0
+  assetPath: Assets/GameObjectPool/Prefabs/TestRigidBody.prefab
+  uploadId: 699146

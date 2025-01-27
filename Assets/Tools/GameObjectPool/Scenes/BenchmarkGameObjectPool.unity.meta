@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ccafa613655b64d4591814a1298fec02
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297573
+  packageName: universalGameObject pool
+  packageVersion: 1.0
+  assetPath: Assets/GameObjectPool/Scenes/BenchmarkGameObjectPool.unity
+  uploadId: 699146
